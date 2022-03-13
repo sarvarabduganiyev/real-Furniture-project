@@ -24,13 +24,16 @@ menus.addEventListener("click", () => {
 
 
 
-// window.addEventListener("click", (e) => {
-//     if (e.target.closest(".menus")) {
-//         ul__links.classList.toggle("active");
-//     }
-//     else {
-//         ul__links.classList.remove("active");
-//     }
-// });
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 20,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    autoplay: {
+        delay: 2000,
+    },
+});
+
+
 
 

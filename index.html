@@ -5,354 +5,375 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mebel</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style/tailwindcss.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
-    <div>
+    <div class="flex flex-col min-h-screen">
         <header id="header">
-            <div>
-                <nav id="nav" class="relative z-30">
-                    <div class=" flex justify-between max__w nav___div items-center">
-                        <button style="z-index: 100;">
-                            <svg class="menus" width="40" height="24" viewBox="0 0 48 24" fill="none"
+            <nav id="nav" class="relative z-30 bg-green-100">
+                <div class=" flex justify-between max__w nav___div items-center">
+                    <button style="z-index: 100;">
+                        <svg class="menus" width="28" height="16" viewBox="0 0 28 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H27M1 8H27M1 15H27" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div>
+                        <a href="./index.html" class="block">
+                            <img class="nav__logo" src="./img/mebelLogo.png" alt="LOGO">
+                        </a>
+                    </div>
+                    <div class="flex justify-between items-center lupani__divi">
+                        <button class="mr-7 lupa__button">
+                            <svg class="lupa" width="27" height="25" viewBox="0 0 32 32" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11 5H37M11 12H37M11 19H37" stroke="white" stroke-width="1.5"
-                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M20.4454 20.4467L26.6654 26.668M23.1121 14.0093C23.1121 19.0373 19.0361 23.1133 14.0081 23.1133C8.98005 23.1133 4.90405 19.0373 4.90405 14.0093C4.90405 8.98133 8.98005 4.90533 14.0081 4.90533C19.0361 4.90533 23.1121 8.98133 23.1121 14.0093Z"
+                                    stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                         </button>
                         <div>
-                            <img class="nav__logo" src="./img/mebelLogo.png" alt="LOGO">
+                            <div class="menu__size  text-white  relative herder__li py-1 ">
+                                <div class="flex space-x-1 universitet__menu  text-white justify-center items-center
+                            ">
+                                    <a style="font-size: 21px;color:white; line-height: 24px;" class="pl-1"
+                                        href="#">Rus</a>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.433 9.45L12.004 15.88L5.57397 9.45" stroke="white"
+                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div style="right: 2px; top: 32px;" class=" rounded-r-2xl  py-2 shadow-2xl universitet-select__div rounded-2xl  absolute z-10 hidden mt-1  bg-white
+                            ">
+                                    <ul class="space-y-3 w-36">
+                                        <li>
+                                            <a style="font-size: 21px; color: white; line-height: 24px;"
+                                                class="text-black ml-6  pl-2 py-1 universitet-select" href="#">Rus
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a style="font-size: 21px;color: white; line-height: 24px;"
+                                                class="text-black pl-2 ml-6 py-1 universitet-select" href="#">Eng
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </li>
+                            </div>
                         </div>
-                        <div class="flex justify-between space-x-7 items-center">
-                            <button>
-                                <svg style="width:25px; height:25px" viewBox="0 0 32 32" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M20.4454 20.4467L26.6654 26.668M23.1121 14.0093C23.1121 19.0373 19.0361 23.1133 14.0081 23.1133C8.98005 23.1133 4.90405 19.0373 4.90405 14.0093C4.90405 8.98133 8.98005 4.90533 14.0081 4.90533C19.0361 4.90533 23.1121 8.98133 23.1121 14.0093Z"
-                                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                            <div>
-                                <div class="menu__size  text-white  relative herder__li py-1 ">
-                                    <div class="flex space-x-1 universitet__menu  text-white justify-center items-center
-                                    ">
-                                        <a style="font-size: 21px; line-height: 24px;" class="pl-1" href="#">Rus</a>
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.433 9.45L12.004 15.88L5.57397 9.45" stroke="white"
-                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                                stroke-linejoin="round" />
+                    </div>
+                </div>
+            </nav>
+            <section id="section1">
+                <ul class="ul__links">
+                    <li>
+                        <a href="#">Yotoqxona</a>
+                        <h4>01</h4>
+                    </li>
+                    <li>
+                        <a href="#">Bolalar xonasi</a>
+                        <h4>02</h4>
+                    </li>
+                    <li>
+                        <a href="#">Mehmonxona</a>
+                        <h4>03</h4>
+                    </li>
+                    <li>
+                        <a href="#">Ofis jihozlari</a>
+                        <h4>04</h4>
+                    </li>
+                    <div class=" relative z-40 header__biz__div">
+                        <a href="#" class="block">Biz haqimizda</a>
+                        <a href="#" class="block">Публиня оферта</a>
+                    </div>
+                </ul>
+            </section>
+            <section>
+                <div class="header__blur__card__megaDiv max__w">
+                    <div class="header__blur__card ">
+                        <h2>Projects & Architects</h2>
+                        <p>One-step solution to meet all of your furniture needs, Для Вашего удобства мы создали
+                            виртуальный тур, благодаря которому Вы можете ознакомиться с наши салоны</p>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <div class="flex-auto mt-1">
+            <div class="max__w">
+                <div>
+                    <h1 class="SEGGESTED">Seggested for you</h1>
+                </div>
+                <div class="w-11/12 mx-auto">
+                    <div class="mt-12">
+                        <div class="kv__gridMegaDiv grid grid-cols-2">
+                            <div class="relative kv__grid__1__1">
+                                <div class="relative" style="height:500px">
+                                    <img class="absolute w-full h-full object-cover" src=" ./img/headerImg.png"
+                                        alt="img">
+                                </div>
+                                <div class="absolute grid__component__yarim1__wordsDiv">
+                                    <h2>Logan dining room set</h2>
+                                    <h3>Limited edition</h3>
+                                </div>
+                            </div>
+                            <div class="kv__gridSmallDiv grid grid-cols-2">
+                                <div class=" bg-gray-200 kv__grid__2__1 p-4" style="height:250px">
+                                    <div>
+                                        <h2>Less is More</h2>
+                                        <p class="__qator3">To'liq o'lchamlar hech narsa qisqartirilmagan. Bazaviy
+                                            to'plamning
+                                            o'zida barcha
+                                            qulayliklar mavjud.</p>
+                                    </div>
+                                    <div>
+                                        <svg class="header__arrow1" width="40" height="40" viewBox="0 0 48 48"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="23.5" stroke="#020105" />
+                                            <path
+                                                d="M25.4863 17.7567C25.1934 17.4638 24.7185 17.4638 24.4257 17.7567C24.1328 18.0496 24.1328 18.5244 24.4257 18.8173L25.4863 17.7567ZM30.669 24L31.1993 24.5303C31.34 24.3897 31.419 24.1989 31.419 24C31.419 23.8011 31.34 23.6103 31.1993 23.4697L30.669 24ZM24.4257 29.1827C24.1328 29.4755 24.1328 29.9504 24.4257 30.2433C24.7185 30.5362 25.1934 30.5362 25.4863 30.2433L24.4257 29.1827ZM17.355 23.25C16.9408 23.25 16.605 23.5858 16.605 24C16.605 24.4142 16.9408 24.75 17.355 24.75V23.25ZM30.652 24.75C31.0662 24.75 31.402 24.4142 31.402 24C31.402 23.5858 31.0662 23.25 30.652 23.25V24.75ZM24.4257 18.8173L30.1387 24.5303L31.1993 23.4697L25.4863 17.7567L24.4257 18.8173ZM30.1387 23.4697L24.4257 29.1827L25.4863 30.2433L31.1993 24.5303L30.1387 23.4697ZM17.355 24.75H30.652V23.25H17.355V24.75Z"
+                                                fill="#020105" />
                                         </svg>
                                     </div>
-                                    <div style="right: 2px; top: 32px;" class=" rounded-r-2xl  py-2 shadow-2xl universitet-select__div rounded-2xl  absolute z-10 hidden mt-1  bg-white
-                                    ">
-                                        <ul class="space-y-3 w-36">
-                                            <li>
-                                                <a style="font-size: 21px; line-height: 24px;"
-                                                    class="text-black ml-6  pl-2 py-1 universitet-select" href="#">Rus
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a style="font-size: 21px; line-height: 24px;"
-                                                    class="text-black pl-2 ml-6 py-1 universitet-select" href="#">Eng
-                                                </a>
-                                            </li>
-                                        </ul>
+                                </div>
+                                <div class="kv__grid__2__2">
+                                    <div class="relative" style="height:250px">
+                                        <img class="absolute w-full h-full object-cover" src=" ./img/headerImg.png"
+                                            alt="img">
                                     </div>
-                                    </li>
+                                </div>
+                                <div class="kv__grid__2__3">
+                                    <div class="relative" style="height:250px">
+                                        <img class="absolute w-full h-full object-cover" src=" ./img/headerImg.png"
+                                            alt="img">
+                                    </div>
+                                </div>
+                                <div class="bg-gray-200 kv__grid__2__4 p-4" style="height:250px">
+                                    <div>
+                                        <h2>Less is More</h2>
+                                        <p class="__qator3">To'liq o'lchamlar hech narsa qisqartirilmagan. Bazaviy
+                                            to'plamning
+                                            o'zida barcha
+                                            qulayliklar mavjud.</p>
+                                    </div>
+                                    <div>
+                                        <svg class="seggested2__svg" width="40" height="40" viewBox="0 0 48 48"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="23.5" stroke="#020105" />
+                                            <path
+                                                d="M25.4863 17.7567C25.1934 17.4638 24.7185 17.4638 24.4257 17.7567C24.1328 18.0496 24.1328 18.5244 24.4257 18.8173L25.4863 17.7567ZM30.669 24L31.1993 24.5303C31.34 24.3897 31.419 24.1989 31.419 24C31.419 23.8011 31.34 23.6103 31.1993 23.4697L30.669 24ZM24.4257 29.1827C24.1328 29.4755 24.1328 29.9504 24.4257 30.2433C24.7185 30.5362 25.1934 30.5362 25.4863 30.2433L24.4257 29.1827ZM17.355 23.25C16.9408 23.25 16.605 23.5858 16.605 24C16.605 24.4142 16.9408 24.75 17.355 24.75V23.25ZM30.652 24.75C31.0662 24.75 31.402 24.4142 31.402 24C31.402 23.5858 31.0662 23.25 30.652 23.25V24.75ZM24.4257 18.8173L30.1387 24.5303L31.1993 23.4697L25.4863 17.7567L24.4257 18.8173ZM30.1387 23.4697L24.4257 29.1827L25.4863 30.2433L31.1993 24.5303L30.1387 23.4697ZM17.355 24.75H30.652V23.25H17.355V24.75Z"
+                                                fill="#020105" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </nav>
-                <section id="section1">
-                    <ul class="ul__links">
-                        <li>
-                            <a href="#">Yotoqxona</a>
-                            <h4>01</h4>
-                        </li>
-                        <li>
-                            <a href="#">Bolalar xonasi</a>
-                            <h4>02</h4>
-                        </li>
-                        <li>
-                            <a href="#">Mehmonxona</a>
-                            <h4>03</h4>
-                        </li>
-                        <li>
-                            <a href="#">Ofis jihozlari</a>
-                            <h4>04</h4>
-                        </li>
-                        <div class=" relative z-40 header__biz__div">
-                            <a href="#" class="block">Biz haqimizda</a>
-                            <a href="#" class="block">Публиня оферта</a>
-                        </div>
-                    </ul>
-
-                    <div class="header__blur__card__megaDiv max__w">
-                        <div class="header__blur__card ">
-                            <h2>Projects & Architects</h2>
-                            <p>One-step solution to meet all of your furniture needs, Для Вашего удобства мы создали
-                                виртуальный тур, благодаря которому Вы можете ознакомиться с наши салоны</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </header>
-        <section class="my-12 max__w ">
-            <div>
-                <h1 class="SEGGESTED">SEGGESTED FOR YOU</h1>
+                </div>
             </div>
             <div>
-                <div style="margin-top:60px;  height: 724px;" class="grid SEGGESTED__gridDiv grid-cols-2">
-                    <div class="seggested__grid__1 ">
-                        <div class="w-11/12 mx-auto seggested__grid__1__div relative">
-                            <h2>Logan dining room set</h2>
-                            <p>Limited edition</p>
-                        </div>
+                <div style="margin-top: 100px;" class="img__top__megaDiv  max__w">
+                    <div style="height: 400px;" class="img__top__megaDiv__imgDiv relative left-5 top-7">
+                        <img class="w-full absolute h-full object-cover " src="./img/headerImg.png" alt="img">
                     </div>
-                    <div class="grid grid-cols-2 seggested__grid__2">
-                        <div class="seggested__grid__2__1">
-                            <div>
-                                <h2>Less is More</h2>
-                                <p>To'liq o'lchamlar hech narsa qisqartirilmagan. Bazaviy to'plamning
-                                    o'zida barcha
-                                    qulayliklar mavjud.</p>
-                            </div>
-                            <div>
-                                <svg class="header__arrow1" width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="24" cy="24" r="23.5" stroke="#020105" />
-                                    <path
-                                        d="M25.4863 17.7567C25.1934 17.4638 24.7185 17.4638 24.4257 17.7567C24.1328 18.0496 24.1328 18.5244 24.4257 18.8173L25.4863 17.7567ZM30.669 24L31.1993 24.5303C31.34 24.3897 31.419 24.1989 31.419 24C31.419 23.8011 31.34 23.6103 31.1993 23.4697L30.669 24ZM24.4257 29.1827C24.1328 29.4755 24.1328 29.9504 24.4257 30.2433C24.7185 30.5362 25.1934 30.5362 25.4863 30.2433L24.4257 29.1827ZM17.355 23.25C16.9408 23.25 16.605 23.5858 16.605 24C16.605 24.4142 16.9408 24.75 17.355 24.75V23.25ZM30.652 24.75C31.0662 24.75 31.402 24.4142 31.402 24C31.402 23.5858 31.0662 23.25 30.652 23.25V24.75ZM24.4257 18.8173L30.1387 24.5303L31.1993 23.4697L25.4863 17.7567L24.4257 18.8173ZM30.1387 23.4697L24.4257 29.1827L25.4863 30.2433L31.1993 24.5303L30.1387 23.4697ZM17.355 24.75H30.652V23.25H17.355V24.75Z"
-                                        fill="#020105" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="seggested__grid__2__2">
-
-                        </div>
-                        <div class="seggested__grid__2__3 ">
-                            <div class="w-11/12 mx-auto">
-                                <h2>Logan dining room set</h2>
-                            </div>
-
-                        </div>
-                        <div class="seggested__grid__2__4">
-                            <div>
-                                <h2>Less is More</h2>
-                                <p>To'liq o'lchamlar hech narsa qisqartirilmagan. Bazaviy to'plamning
-                                    o'zida barcha
-                                    qulayliklar mavjud.</p>
-                            </div>
-                            <div>
-                                <svg class="seggested2__svg" width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="24" cy="24" r="23.5" stroke="#020105" />
-                                    <path
-                                        d="M25.4863 17.7567C25.1934 17.4638 24.7185 17.4638 24.4257 17.7567C24.1328 18.0496 24.1328 18.5244 24.4257 18.8173L25.4863 17.7567ZM30.669 24L31.1993 24.5303C31.34 24.3897 31.419 24.1989 31.419 24C31.419 23.8011 31.34 23.6103 31.1993 23.4697L30.669 24ZM24.4257 29.1827C24.1328 29.4755 24.1328 29.9504 24.4257 30.2433C24.7185 30.5362 25.1934 30.5362 25.4863 30.2433L24.4257 29.1827ZM17.355 23.25C16.9408 23.25 16.605 23.5858 16.605 24C16.605 24.4142 16.9408 24.75 17.355 24.75V23.25ZM30.652 24.75C31.0662 24.75 31.402 24.4142 31.402 24C31.402 23.5858 31.0662 23.25 30.652 23.25V24.75ZM24.4257 18.8173L30.1387 24.5303L31.1993 23.4697L25.4863 17.7567L24.4257 18.8173ZM30.1387 23.4697L24.4257 29.1827L25.4863 30.2433L31.1993 24.5303L30.1387 23.4697ZM17.355 24.75H30.652V23.25H17.355V24.75Z"
-                                        fill="#020105" />
-                                </svg>
+                    <div>
+                        <div class="img__top__megaDiv__wordsDiv ">
+                            <h2 class="mt-24">Model “R” light</h2>
+                            <p class="mt-1">To'liq o'lchamlar hech narsa qisqartirilmagan. Bazaviy to'plamning o'zida
+                                barcha
+                                qulayliklar
+                                mavjud.</p>
+                            <div class="r__buttonDiv mt-5">
+                                <button>Batafsil</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="my-12 max__w ">
-            <div class="r__div">
-                <div class="r__div__img">
-                    <img src="./img/R.png" alt="IMG">
-                </div>
-                <div class="r__second__div">
-                    <h2>Model “R” light</h2>
-                    <p>To'liq o'lchamlar hech narsa qisqartirilmagan. Bazaviy to'plamning o'zida barcha qulayliklar
-                        mavjud.</p>
-                    <button>Batafsil</button>
-                </div>
-            </div>
-        </section>
-        <section class="etibor__card__section max__w ">
-            <div>
-                <div class="">
-                    <h2 class="etibor__card__sarlavha">E’tiboringizga taklif qilamiz</h2>
-                </div>
-                <div class="etibor__card__megaDiv">
-                    <div class="etibor__card items-start flex  justify-between">
-                        <div class="etibor__card__odd">
-                            <div>
-                                <div style="height:200px;" class="relative etibor__card__odd__img__div">
-                                    <img class="absolute w-full h-full object-cover" src="./img/R.png" alt="card__img">
-                                </div>
-                                <div>
-                                    <h2 class="mt-4">Model "R - Rimini"</h2>
-                                    <h4 class="mt-1">Yuksak sifat qulay narxda</h4>
-                                    <a class="mt-6 inline-block" href="#">Model “R”</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="etibor__card__even">
-                            <div>
-                                <div class="relative etibor__card__even__imgDiv">
-                                    <img class="absolute w-full h-full object-cover" src="./img/R.png" alt="card__img">
-                                </div>
-                                <div>
-                                    <h2>Model "R - Rimini"</h2>
-                                    <h4>Yuksak sifat qulay narxda</h4>
-                                    <a href="#">Model “R”</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="etibor__card__odd">
-                            <div>
-                                <div style="height:200px;" class="relative etibor__card__odd__img__div">
-                                    <img class="absolute w-full h-full object-cover" src="./img/R.png" alt="card__img">
-                                </div>
-                                <div>
-                                    <h2 class="mt-4">Model "R - Rimini"</h2>
-                                    <h4 class="mt-1">Yuksak sifat qulay narxda</h4>
-                                    <a class="mt-6 inline-block" href="#">Model “R”</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="etibor__card__even">
-                            <div>
-                                <div class="relative etibor__card__even__imgDiv">
-                                    <img class="absolute w-full h-full object-cover" src="./img/R.png" alt="card__img">
-                                </div>
-                                <div>
-                                    <h2>Model "R - Rimini"</h2>
-                                    <h4>Yuksak sifat qulay narxda</h4>
-                                    <a href="#">Model “R”</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section style="margin-top: 208px;" class="max__w">
-            <div class="r__bottom">
-                <div>
-                    <div class="r__bottom__wordsDiv">
-                        <h2>Model “R” light</h2>
-                        <h4>To'liq o'lchamlar hech narsa qisqartirilmagan. Bazaviy to'plamning o'zida barcha qulayliklar
-                            mavjud.</h4>
-                        <button>Batafsil</button>
-                    </div>
-                </div>
-                <div>
-                    <img src="./img/R.png" alt="IMG">
-                </div>
-            </div>
-        </section>
-        <footer class="" style="margin-top: 120px; " class="">
-            <div class="footer-line"></div>
             <div class="max__w">
-                <div style="min-height: 353px;" class="footer__flex flex justify-between items-center">
-                    <div class="flex flex-col  footer__bolimalar">
-                        <a href="#" class="inline-block hover:underline ">Biz kimmiz</a>
-                        <a href="#" class="inline-block hover:underline">Narxlar</a>
-                        <a href="#" class="inline-block hover:underline">Biz bilan bog'laning</a>
-                        <a href="#" class="inline-block hover:underline">Yusuflar group</a>
-                        <a href="#" class="inline-block hover:underline">YUXO oilasiga qo'shiling</a>
-                        <a href="#" class="inline-block hover:underline">Ommaviy Oferta</a>
+                <div class="heed__sarlavha">
+                    <h1>E’tiboringizga taklif qilamiz</h1>
+                </div>
+                <div class="heed__cardDiv grid grid-cols-4 gap-5 items-start">
+                    <div class="heed__cards">
+                        <div class="heed__cardDiv__smallDiv relative">
+                            <img src="./img/headerImg.png" class="absolute w-full h-full object-cover" alt="cardIMG">
+                        </div>
+                        <div>
+                            <h2>Model "R - Rimini</h2>
+                            <h4>Yuksak sifat qulay narxda</h4>
+                            <a href="#" class="block">Model “R”</a>
+                        </div>
                     </div>
-                    <div style="width: 133px; height: 143px;" class="relative footer__logo__imgDiv">
-                        <img class="absolute w-full h-full object-cover" src="./img/mebelLogo.png"
-                            alt="FOOTER__LOGO__IMG">
+                    <div class="heed__cards">
+                        <div class="heed__cardDiv__bigDiv relative">
+                            <img src="./img/headerImg.png" class="absolute w-full h-full object-cover" alt="cardIMG">
+                        </div>
+                        <div>
+                            <h2>Model "R - Rimini</h2>
+                            <h4>Yuksak sifat qulay narxda</h4>
+                            <a href="#" class="block">Model “R”</a>
+                        </div>
                     </div>
-                    <div class="">
-                        <div class="footer__login flex flex-col justify-center items-end">
-                            <a style="margin-top: 16px;" href="#">info@yuxo.uz</a>
-                            <a style="margin-top: 16px;" href="tel:+998996666666">+998 99 666 66 66</a>
-                            <h4 style="margin-top: 16px;">Sergeli, Toshkent, Uzbekistan</h4>
-                            <div>
-                                <h4 class="bizga__obuna__footer" style="margin-top: 30px; text-align: right;">Bizga
-                                    obuna bo’ling</h4>
-                                <div style="margin-top: 17px;" class="flex space-x-2 ">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M10.5 20.9C6.25 20.15 3 16.45 3 12C3 7.05 7.05 3 12 3C16.95 3 21 7.05 21 12C21 16.45 17.75 20.15 13.5 20.9L13 20.5H11L10.5 20.9Z"
-                                            fill="url(#paint0_linear_76_356)" />
-                                        <path
-                                            d="M15.5 14.5L15.9 12H13.5V10.25C13.5 9.55 13.75 9 14.85 9H16V6.7C15.35 6.6 14.65 6.5 14 6.5C11.95 6.5 10.5 7.75 10.5 10V12H8.25V14.5H10.5V20.85C11 20.95 11.5 21 12 21C12.5 21 13 20.95 13.5 20.85V14.5H15.5Z"
-                                            fill="white" />
-                                        <defs>
-                                            <linearGradient id="paint0_linear_76_356" x1="12" y1="20.377" x2="12" y2="3"
-                                                gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#0062E0" />
-                                                <stop offset="1" stop-color="#19AFFF" />
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M12.0003 3.27295C9.63021 3.27295 9.33276 3.28331 8.40188 3.32568C7.47282 3.36822 6.83866 3.51531 6.28376 3.73113C5.70978 3.95404 5.22289 4.25222 4.73781 4.73749C4.25237 5.22259 3.9542 5.70949 3.73057 6.28331C3.51421 6.8384 3.36694 7.47277 3.32513 8.40149C3.28349 9.3324 3.27258 9.63004 3.27258 12.0002C3.27258 14.3704 3.28313 14.6669 3.32531 15.5979C3.36803 16.5269 3.51512 17.1611 3.73075 17.716C3.95384 18.29 4.25201 18.7769 4.73727 19.262C5.22216 19.7475 5.70905 20.0464 6.28267 20.2693C6.83793 20.4851 7.47227 20.6322 8.40115 20.6748C9.33204 20.7171 9.6293 20.7275 11.9992 20.7275C14.3695 20.7275 14.6661 20.7171 15.5969 20.6748C16.526 20.6322 17.1609 20.4851 17.7161 20.2693C18.2899 20.0464 18.7761 19.7475 19.261 19.262C19.7464 18.7769 20.0446 18.29 20.2682 17.7162C20.4828 17.1611 20.6301 16.5268 20.6737 15.598C20.7155 14.6671 20.7264 14.3704 20.7264 12.0002C20.7264 9.63004 20.7155 9.33259 20.6737 8.40168C20.6301 7.47259 20.4828 6.8384 20.2682 6.28349C20.0446 5.70949 19.7464 5.22259 19.261 4.73749C18.7756 4.25204 18.2901 3.95386 17.7156 3.73113C17.1593 3.51531 16.5247 3.36822 15.5957 3.32568C14.6648 3.28331 14.3684 3.27295 11.9976 3.27295H12.0003ZM11.2174 4.84568C11.4498 4.84531 11.7091 4.84568 12.0003 4.84568C14.3304 4.84568 14.6066 4.85404 15.5268 4.89586C16.3776 4.93477 16.8394 5.07695 17.1471 5.1964C17.5543 5.35459 17.8447 5.54368 18.15 5.84913C18.4554 6.15459 18.6445 6.44549 18.803 6.85277C18.9225 7.16004 19.0648 7.62186 19.1036 8.47277C19.1454 9.39277 19.1545 9.66913 19.1545 11.9982C19.1545 14.3273 19.1454 14.6037 19.1036 15.5237C19.0646 16.3746 18.9225 16.8364 18.803 17.1437C18.6448 17.5509 18.4554 17.8409 18.15 18.1462C17.8445 18.4517 17.5545 18.6408 17.1471 18.7989C16.8398 18.9189 16.3776 19.0608 15.5268 19.0997C14.6068 19.1415 14.3304 19.1506 12.0003 19.1506C9.67002 19.1506 9.39385 19.1415 8.47388 19.0997C7.623 19.0604 7.16119 18.9182 6.85338 18.7988C6.44612 18.6406 6.15522 18.4515 5.84978 18.146C5.54433 17.8406 5.35525 17.5504 5.19671 17.1429C5.07726 16.8357 4.9349 16.3739 4.89617 15.5229C4.85435 14.6029 4.84599 14.3266 4.84599 11.996C4.84599 9.66549 4.85435 9.39059 4.89617 8.47059C4.93508 7.61968 5.07726 7.15786 5.19671 6.85022C5.35488 6.44295 5.54433 6.15204 5.84978 5.84659C6.15522 5.54113 6.44612 5.35204 6.85338 5.19349C7.16101 5.07349 7.623 4.93168 8.47388 4.89259C9.27895 4.85622 9.59094 4.84531 11.2174 4.84349V4.84568ZM16.6587 6.29477C16.0806 6.29477 15.6115 6.76331 15.6115 7.34168C15.6115 7.91986 16.0806 8.38895 16.6587 8.38895C17.2369 8.38895 17.706 7.91986 17.706 7.34168C17.706 6.76349 17.2369 6.2944 16.6587 6.2944V6.29477ZM12.0003 7.5184C9.5253 7.5184 7.51864 9.52513 7.51864 12.0002C7.51864 14.4753 9.5253 16.4811 12.0003 16.4811C14.4753 16.4811 16.4813 14.4753 16.4813 12.0002C16.4813 9.52513 14.4752 7.5184 12.0001 7.5184H12.0003ZM12.0003 9.09113C13.6068 9.09113 14.9093 10.3935 14.9093 12.0002C14.9093 13.6068 13.6068 14.9093 12.0003 14.9093C10.3936 14.9093 9.09132 13.6068 9.09132 12.0002C9.09132 10.3935 10.3936 9.09113 12.0003 9.09113Z"
-                                            fill="url(#paint0_radial_76_357)" />
-                                        <path
-                                            d="M12.0003 3.27295C9.63021 3.27295 9.33276 3.28331 8.40188 3.32568C7.47282 3.36822 6.83866 3.51531 6.28376 3.73113C5.70978 3.95404 5.22289 4.25222 4.73781 4.73749C4.25237 5.22259 3.9542 5.70949 3.73057 6.28331C3.51421 6.8384 3.36694 7.47277 3.32513 8.40149C3.28349 9.3324 3.27258 9.63004 3.27258 12.0002C3.27258 14.3704 3.28313 14.6669 3.32531 15.5979C3.36803 16.5269 3.51512 17.1611 3.73075 17.716C3.95384 18.29 4.25201 18.7769 4.73727 19.262C5.22216 19.7475 5.70905 20.0464 6.28267 20.2693C6.83793 20.4851 7.47227 20.6322 8.40115 20.6748C9.33204 20.7171 9.6293 20.7275 11.9992 20.7275C14.3695 20.7275 14.6661 20.7171 15.5969 20.6748C16.526 20.6322 17.1609 20.4851 17.7161 20.2693C18.2899 20.0464 18.7761 19.7475 19.261 19.262C19.7464 18.7769 20.0446 18.29 20.2682 17.7162C20.4828 17.1611 20.6301 16.5268 20.6737 15.598C20.7155 14.6671 20.7264 14.3704 20.7264 12.0002C20.7264 9.63004 20.7155 9.33259 20.6737 8.40168C20.6301 7.47259 20.4828 6.8384 20.2682 6.28349C20.0446 5.70949 19.7464 5.22259 19.261 4.73749C18.7756 4.25204 18.2901 3.95386 17.7156 3.73113C17.1593 3.51531 16.5247 3.36822 15.5957 3.32568C14.6648 3.28331 14.3684 3.27295 11.9976 3.27295H12.0003ZM11.2174 4.84568C11.4498 4.84531 11.7091 4.84568 12.0003 4.84568C14.3304 4.84568 14.6066 4.85404 15.5268 4.89586C16.3776 4.93477 16.8394 5.07695 17.1471 5.1964C17.5543 5.35459 17.8447 5.54368 18.15 5.84913C18.4554 6.15459 18.6445 6.44549 18.803 6.85277C18.9225 7.16004 19.0648 7.62186 19.1036 8.47277C19.1454 9.39277 19.1545 9.66913 19.1545 11.9982C19.1545 14.3273 19.1454 14.6037 19.1036 15.5237C19.0646 16.3746 18.9225 16.8364 18.803 17.1437C18.6448 17.5509 18.4554 17.8409 18.15 18.1462C17.8445 18.4517 17.5545 18.6408 17.1471 18.7989C16.8398 18.9189 16.3776 19.0608 15.5268 19.0997C14.6068 19.1415 14.3304 19.1506 12.0003 19.1506C9.67002 19.1506 9.39385 19.1415 8.47388 19.0997C7.623 19.0604 7.16119 18.9182 6.85338 18.7988C6.44612 18.6406 6.15522 18.4515 5.84978 18.146C5.54433 17.8406 5.35525 17.5504 5.19671 17.1429C5.07726 16.8357 4.9349 16.3739 4.89617 15.5229C4.85435 14.6029 4.84599 14.3266 4.84599 11.996C4.84599 9.66549 4.85435 9.39059 4.89617 8.47059C4.93508 7.61968 5.07726 7.15786 5.19671 6.85022C5.35488 6.44295 5.54433 6.15204 5.84978 5.84659C6.15522 5.54113 6.44612 5.35204 6.85338 5.19349C7.16101 5.07349 7.623 4.93168 8.47388 4.89259C9.27895 4.85622 9.59094 4.84531 11.2174 4.84349V4.84568ZM16.6587 6.29477C16.0806 6.29477 15.6115 6.76331 15.6115 7.34168C15.6115 7.91986 16.0806 8.38895 16.6587 8.38895C17.2369 8.38895 17.706 7.91986 17.706 7.34168C17.706 6.76349 17.2369 6.2944 16.6587 6.2944V6.29477ZM12.0003 7.5184C9.5253 7.5184 7.51864 9.52513 7.51864 12.0002C7.51864 14.4753 9.5253 16.4811 12.0003 16.4811C14.4753 16.4811 16.4813 14.4753 16.4813 12.0002C16.4813 9.52513 14.4752 7.5184 12.0001 7.5184H12.0003ZM12.0003 9.09113C13.6068 9.09113 14.9093 10.3935 14.9093 12.0002C14.9093 13.6068 13.6068 14.9093 12.0003 14.9093C10.3936 14.9093 9.09132 13.6068 9.09132 12.0002C9.09132 10.3935 10.3936 9.09113 12.0003 9.09113Z"
-                                            fill="url(#paint1_radial_76_357)" />
-                                        <defs>
-                                            <radialGradient id="paint0_radial_76_357" cx="0" cy="0" r="1"
-                                                gradientUnits="userSpaceOnUse"
-                                                gradientTransform="translate(7.90878 22.0719) rotate(-90) scale(17.2987 16.0885)">
-                                                <stop stop-color="#FFDD55" />
-                                                <stop offset="0.1" stop-color="#FFDD55" />
-                                                <stop offset="0.5" stop-color="#FF543E" />
-                                                <stop offset="1" stop-color="#C837AB" />
-                                            </radialGradient>
-                                            <radialGradient id="paint1_radial_76_357" cx="0" cy="0" r="1"
-                                                gradientUnits="userSpaceOnUse"
-                                                gradientTransform="translate(0.348973 4.53035) rotate(78.6811) scale(7.7326 31.8729)">
-                                                <stop stop-color="#3771C8" />
-                                                <stop offset="0.128" stop-color="#3771C8" />
-                                                <stop offset="1" stop-color="#6600FF" stop-opacity="0" />
-                                            </radialGradient>
-                                        </defs>
-                                    </svg>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M18.6615 9.07632C18.6673 9.22622 18.6692 9.37606 18.6692 9.52596C18.6692 14.0707 15.4722 19.3173 9.62601 19.3173C7.83015 19.3173 6.16026 18.745 4.7533 17.7706C5.002 17.7979 5.25459 17.8184 5.51105 17.8184C7.00006 17.8184 8.37149 17.2663 9.45934 16.3397C8.06852 16.3192 6.89412 15.3176 6.48908 13.9549C6.68352 13.9958 6.88377 14.0163 7.08855 14.0163C7.3773 14.0163 7.65766 13.9754 7.9264 13.8937C6.47098 13.5802 5.37474 12.1903 5.37474 10.5209C5.37474 10.5005 5.37474 10.4936 5.37474 10.48C5.80368 10.7321 6.29463 10.8887 6.81594 10.9092C5.96194 10.2891 5.40057 9.23302 5.40057 8.04062C5.40057 7.41376 5.5569 6.82094 5.83209 6.30991C7.39926 8.39491 9.74229 9.76448 12.3837 9.90757C12.3295 9.65546 12.3017 9.3898 12.3017 9.12406C12.3017 7.22304 13.7248 5.68311 15.4806 5.68311C16.3947 5.68311 17.2203 6.0988 17.7997 6.76654C18.5252 6.61664 19.2048 6.33049 19.8197 5.93529C19.5814 6.73931 19.0781 7.41373 18.4205 7.83618C19.0639 7.75441 19.6776 7.57058 20.2467 7.29803C19.8197 7.98622 19.2823 8.59255 18.6615 9.07632Z"
-                                            fill="#1EA1F2" />
-                                    </svg>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M7.28185 14.3702C7.37952 13.5615 7.71119 13.1088 8.3362 12.6446C9.23049 12.016 10.3476 12.3716 10.3476 12.3716V10.2621C10.6192 10.2552 10.8908 10.2713 11.1595 10.3102V13.0249C11.1595 13.0249 10.0427 12.6693 9.14842 13.2983C8.52374 13.7621 8.19139 14.2152 8.09406 15.0239C8.09101 15.463 8.17342 16.037 8.55291 16.5333C8.45908 16.4852 8.36345 16.4304 8.266 16.3689C7.43005 15.8075 7.27778 14.9654 7.28185 14.3702ZM15.772 6.36168C15.1568 5.68756 14.9241 5.00694 14.84 4.52881H15.6139C15.6139 4.52881 15.4596 5.78247 16.5842 7.01533L16.5998 7.0319C16.2967 6.84125 16.0188 6.61622 15.772 6.36168ZM19.5 8.27289V10.933C19.5 10.933 18.5125 10.8943 17.7817 10.7084C16.7612 10.4483 16.1053 10.0495 16.1053 10.0495C16.1053 10.0495 15.6523 9.76512 15.6156 9.7453V15.2384C15.6156 15.5442 15.5319 16.3081 15.2765 16.9451C14.9431 17.7785 14.4287 18.3256 14.3341 18.4374C14.3341 18.4374 13.7084 19.1768 12.6045 19.6748C11.6095 20.124 10.7359 20.1126 10.4748 20.124C10.4748 20.124 8.96461 20.1838 7.60572 19.3007C7.31186 19.106 7.03757 18.8856 6.78638 18.6422L6.79316 18.647C8.15239 19.5301 9.6622 19.4703 9.6622 19.4703C9.92367 19.459 10.7973 19.4703 11.7919 19.0211C12.8948 18.5232 13.5215 17.7837 13.5215 17.7837C13.6151 17.6719 14.1319 17.1249 14.4639 16.2912C14.7186 15.6544 14.8031 14.8903 14.8031 14.5844V9.09198C14.8397 9.11213 15.2924 9.39653 15.2924 9.39653C15.2924 9.39653 15.9487 9.79568 16.9691 10.0554C17.7003 10.2413 18.6875 10.28 18.6875 10.28V8.19553C19.0252 8.27126 19.3132 8.29174 19.5 8.27289Z"
-                                            fill="#FD355A" />
-                                        <path
-                                            d="M18.6878 8.19553V10.2793C18.6878 10.2793 17.7006 10.2406 16.9694 10.0547C15.949 9.7947 15.2928 9.39588 15.2928 9.39588C15.2928 9.39588 14.84 9.11148 14.8034 9.09132V14.5851C14.8034 14.8909 14.7196 15.6551 14.4643 16.2918C14.1309 17.1255 13.6164 17.6726 13.5218 17.7844C13.5218 17.7844 12.8958 18.5238 11.7923 19.0218C10.7976 19.471 9.92399 19.4596 9.66252 19.471C9.66252 19.471 8.15271 19.5308 6.79348 18.6477L6.78669 18.6428C6.64319 18.5038 6.50811 18.3571 6.38211 18.2034C5.94836 17.6745 5.68249 17.0492 5.61568 16.8707C5.61556 16.87 5.61556 16.8692 5.61568 16.8684C5.50817 16.5584 5.28231 15.8137 5.31317 15.0924C5.36777 13.8199 5.81542 13.0389 5.93378 12.8432C6.24724 12.3096 6.65493 11.8322 7.13871 11.4322C7.56562 11.0871 8.0495 10.8125 8.57052 10.6196C9.13376 10.3932 9.73688 10.2719 10.3476 10.2621V12.3716C10.3476 12.3716 9.23047 12.0173 8.33652 12.6446C7.7115 13.1088 7.37983 13.5615 7.28216 14.3702C7.27809 14.9654 7.43036 15.8075 8.26564 16.3692C8.36308 16.4309 8.45872 16.4858 8.55254 16.5337C8.69847 16.7233 8.87608 16.8886 9.0782 17.0228C9.89414 17.5393 10.5778 17.5754 11.4521 17.24C12.0351 17.0157 12.4739 16.5102 12.6774 15.9502C12.8052 15.6005 12.8035 15.2485 12.8035 14.8844V4.52881H14.8383C14.9224 5.00694 15.1551 5.68756 15.7703 6.36168C16.017 6.61622 16.295 6.84125 16.5981 7.0319C16.6876 7.12454 17.1454 7.58251 17.7331 7.86367C18.037 8.009 18.3574 8.12035 18.6878 8.19553Z"
-                                            fill="black" />
-                                        <path
-                                            d="M4.80579 16.2231V16.2248L4.85628 16.3616C4.85048 16.3457 4.83171 16.2973 4.80579 16.2231Z"
-                                            fill="#33F3ED" />
-                                        <path
-                                            d="M8.57051 10.6199C8.0495 10.8127 7.56561 11.0873 7.1387 11.4325C6.65477 11.8334 6.24718 12.3118 5.93411 12.8464C5.81576 13.0414 5.3681 13.8231 5.3135 15.0956C5.28264 15.8169 5.5085 16.5615 5.61601 16.8716C5.61589 16.8724 5.61589 16.8731 5.61601 16.8739C5.68383 17.0507 5.94869 17.6761 6.38244 18.2065C6.50844 18.3603 6.64352 18.507 6.78702 18.646C6.32723 18.3412 5.91716 17.9727 5.57023 17.5526C5.14021 17.0283 4.87501 16.4094 4.80583 16.2268C4.80574 16.2255 4.80574 16.2242 4.80583 16.2229V16.2206C4.69798 15.9108 4.47144 15.1658 4.50298 14.4436C4.55758 13.1711 5.00523 12.39 5.12359 12.1944C5.43657 11.6597 5.84417 11.1813 6.32818 10.7805C6.755 10.4352 7.23891 10.1606 7.75999 9.96788C8.08501 9.83863 8.42361 9.74328 8.76992 9.68348C9.29183 9.59616 9.82487 9.58859 10.3492 9.66105V10.2624C9.738 10.2719 9.13427 10.3933 8.57051 10.6199Z"
-                                            fill="#33F3ED" />
-                                        <path
-                                            d="M14.84 4.52897H12.8052V14.8849C12.8052 15.2489 12.8052 15.6 12.6791 15.9507C12.4735 16.5104 12.0364 17.0158 11.4538 17.2401C10.5792 17.5768 9.89547 17.5395 9.07987 17.023C8.8774 16.8894 8.69933 16.7246 8.55286 16.5354C9.24773 16.8907 9.8697 16.8845 10.6402 16.5881C11.2225 16.3638 11.6603 15.8584 11.8651 15.2984C11.9933 14.9486 11.9916 14.5966 11.9916 14.2329V3.875H14.8013C14.8013 3.875 14.7698 4.13243 14.84 4.52897ZM18.6878 7.6194V8.19569C18.3579 8.12039 18.0382 8.00904 17.7348 7.86383C17.1471 7.58267 16.6893 7.1247 16.5997 7.03206C16.7036 7.09744 16.8114 7.15691 16.9226 7.21018C17.6371 7.55212 18.3408 7.65418 18.6878 7.6194Z"
-                                            fill="#33F3ED" />
-                                    </svg>
-                                    <img src="./img/youTobe.png" alt="youTobe">
-                                    <img src="./img/Telegram.png" alt="Telegram">
-                                </div>
-                            </div>
+                    <div class="heed__cards">
+                        <div class="heed__cardDiv__smallDiv relative">
+                            <img src="./img/headerImg.png" class="absolute w-full h-full object-cover" alt="cardIMG">
+                        </div>
+                        <div>
+                            <h2>Model "R - Rimini</h2>
+                            <h4>Yuksak sifat qulay narxda</h4>
+                            <a href="#" class="block">Model “R”</a>
+                        </div>
+                    </div>
+                    <div class="heed__cards">
+                        <div class="heed__cardDiv__bigDiv relative">
+                            <img src="./img/headerImg.png" class="absolute w-full h-full object-cover" alt="cardIMG">
+                        </div>
+                        <div>
+                            <h2>Model "R - Rimini</h2>
+                            <h4>Yuksak sifat qulay narxda</h4>
+                            <a href="#" class="block">Model “R”</a>
                         </div>
                     </div>
                 </div>
 
             </div>
-        </footer>
-    </div>
-    <script src="./js/app.js"></script>
+            <div class="mt-32">
+                <div class="img__bottom max__w">
+                    <div>
+                        <div class="pl-12 img__bottom__textDiv">
+                            <h2 class="mt-24">Model “R” light</h2>
+                            <p class="mt-1">To'liq o'lchamlar hech narsa qisqartirilmagan. Bazaviy to'plamning o'zida
+                                barcha
+                                qulayliklar
+                                mavjud.</p>
+                            <div class="mt-5 img__bottom__buttonDiv">
+                                <button>Batafsil</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="height: 400px;" class="img__bottom__img__Div relative right-5 top-7">
+                            <img class="w-full absolute h-full object-cover " src="./img/headerImg.png"
+                                alt="headers__iMG">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="" style="margin-top: 150px; " class="">
+                <div class="footer-line"></div>
+                <div class="max__w">
+                    <div style="min-height: 353px;" class="footer__flex flex justify-between items-center">
+                        <div class="flex flex-col  footer__bolimalar">
+                            <a href="#" class="inline-block hover:underline ">Biz kimmiz</a>
+                            <a href="#" class="inline-block hover:underline">Narxlar</a>
+                            <a href="#" class="inline-block hover:underline">Biz bilan bog'laning</a>
+                            <a href="#" class="inline-block hover:underline">Yusuflar group</a>
+                            <a href="#" class="inline-block hover:underline">YUXO oilasiga qo'shiling</a>
+                            <a href="#" class="inline-block hover:underline">Ommaviy Oferta</a>
+                        </div>
+                        <div style="width: 133px; height: 143px;" class="relative footer__logo__imgDiv">
+                            <img class="absolute w-full h-full object-cover" src="./img/mebelLogo.png"
+                                alt="FOOTER__LOGO__IMG">
+                        </div>
+                        <div class="">
+                            <div class="footer__login flex flex-col justify-center items-end">
+                                <a style="margin-top: 16px;" href="#">info@yuxo.uz</a>
+                                <a style="margin-top: 16px;" href="tel:+998996666666">+998 99 666 66 66</a>
+                                <h4 style="margin-top: 16px;">Sergeli, Toshkent, Uzbekistan</h4>
+                                <div>
+                                    <h4 class="bizga__obuna__footer" style="margin-top: 30px; text-align: right;">
+                                        Bizga
+                                        obuna bo’ling</h4>
+                                    <div style="margin-top: 17px;" class="flex space-x-2 ">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5 20.9C6.25 20.15 3 16.45 3 12C3 7.05 7.05 3 12 3C16.95 3 21 7.05 21 12C21 16.45 17.75 20.15 13.5 20.9L13 20.5H11L10.5 20.9Z"
+                                                fill="url(#paint0_linear_76_356)" />
+                                            <path
+                                                d="M15.5 14.5L15.9 12H13.5V10.25C13.5 9.55 13.75 9 14.85 9H16V6.7C15.35 6.6 14.65 6.5 14 6.5C11.95 6.5 10.5 7.75 10.5 10V12H8.25V14.5H10.5V20.85C11 20.95 11.5 21 12 21C12.5 21 13 20.95 13.5 20.85V14.5H15.5Z"
+                                                fill="white" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_76_356" x1="12" y1="20.377" x2="12"
+                                                    y2="3" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#0062E0" />
+                                                    <stop offset="1" stop-color="#19AFFF" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0003 3.27295C9.63021 3.27295 9.33276 3.28331 8.40188 3.32568C7.47282 3.36822 6.83866 3.51531 6.28376 3.73113C5.70978 3.95404 5.22289 4.25222 4.73781 4.73749C4.25237 5.22259 3.9542 5.70949 3.73057 6.28331C3.51421 6.8384 3.36694 7.47277 3.32513 8.40149C3.28349 9.3324 3.27258 9.63004 3.27258 12.0002C3.27258 14.3704 3.28313 14.6669 3.32531 15.5979C3.36803 16.5269 3.51512 17.1611 3.73075 17.716C3.95384 18.29 4.25201 18.7769 4.73727 19.262C5.22216 19.7475 5.70905 20.0464 6.28267 20.2693C6.83793 20.4851 7.47227 20.6322 8.40115 20.6748C9.33204 20.7171 9.6293 20.7275 11.9992 20.7275C14.3695 20.7275 14.6661 20.7171 15.5969 20.6748C16.526 20.6322 17.1609 20.4851 17.7161 20.2693C18.2899 20.0464 18.7761 19.7475 19.261 19.262C19.7464 18.7769 20.0446 18.29 20.2682 17.7162C20.4828 17.1611 20.6301 16.5268 20.6737 15.598C20.7155 14.6671 20.7264 14.3704 20.7264 12.0002C20.7264 9.63004 20.7155 9.33259 20.6737 8.40168C20.6301 7.47259 20.4828 6.8384 20.2682 6.28349C20.0446 5.70949 19.7464 5.22259 19.261 4.73749C18.7756 4.25204 18.2901 3.95386 17.7156 3.73113C17.1593 3.51531 16.5247 3.36822 15.5957 3.32568C14.6648 3.28331 14.3684 3.27295 11.9976 3.27295H12.0003ZM11.2174 4.84568C11.4498 4.84531 11.7091 4.84568 12.0003 4.84568C14.3304 4.84568 14.6066 4.85404 15.5268 4.89586C16.3776 4.93477 16.8394 5.07695 17.1471 5.1964C17.5543 5.35459 17.8447 5.54368 18.15 5.84913C18.4554 6.15459 18.6445 6.44549 18.803 6.85277C18.9225 7.16004 19.0648 7.62186 19.1036 8.47277C19.1454 9.39277 19.1545 9.66913 19.1545 11.9982C19.1545 14.3273 19.1454 14.6037 19.1036 15.5237C19.0646 16.3746 18.9225 16.8364 18.803 17.1437C18.6448 17.5509 18.4554 17.8409 18.15 18.1462C17.8445 18.4517 17.5545 18.6408 17.1471 18.7989C16.8398 18.9189 16.3776 19.0608 15.5268 19.0997C14.6068 19.1415 14.3304 19.1506 12.0003 19.1506C9.67002 19.1506 9.39385 19.1415 8.47388 19.0997C7.623 19.0604 7.16119 18.9182 6.85338 18.7988C6.44612 18.6406 6.15522 18.4515 5.84978 18.146C5.54433 17.8406 5.35525 17.5504 5.19671 17.1429C5.07726 16.8357 4.9349 16.3739 4.89617 15.5229C4.85435 14.6029 4.84599 14.3266 4.84599 11.996C4.84599 9.66549 4.85435 9.39059 4.89617 8.47059C4.93508 7.61968 5.07726 7.15786 5.19671 6.85022C5.35488 6.44295 5.54433 6.15204 5.84978 5.84659C6.15522 5.54113 6.44612 5.35204 6.85338 5.19349C7.16101 5.07349 7.623 4.93168 8.47388 4.89259C9.27895 4.85622 9.59094 4.84531 11.2174 4.84349V4.84568ZM16.6587 6.29477C16.0806 6.29477 15.6115 6.76331 15.6115 7.34168C15.6115 7.91986 16.0806 8.38895 16.6587 8.38895C17.2369 8.38895 17.706 7.91986 17.706 7.34168C17.706 6.76349 17.2369 6.2944 16.6587 6.2944V6.29477ZM12.0003 7.5184C9.5253 7.5184 7.51864 9.52513 7.51864 12.0002C7.51864 14.4753 9.5253 16.4811 12.0003 16.4811C14.4753 16.4811 16.4813 14.4753 16.4813 12.0002C16.4813 9.52513 14.4752 7.5184 12.0001 7.5184H12.0003ZM12.0003 9.09113C13.6068 9.09113 14.9093 10.3935 14.9093 12.0002C14.9093 13.6068 13.6068 14.9093 12.0003 14.9093C10.3936 14.9093 9.09132 13.6068 9.09132 12.0002C9.09132 10.3935 10.3936 9.09113 12.0003 9.09113Z"
+                                                fill="url(#paint0_radial_76_357)" />
+                                            <path
+                                                d="M12.0003 3.27295C9.63021 3.27295 9.33276 3.28331 8.40188 3.32568C7.47282 3.36822 6.83866 3.51531 6.28376 3.73113C5.70978 3.95404 5.22289 4.25222 4.73781 4.73749C4.25237 5.22259 3.9542 5.70949 3.73057 6.28331C3.51421 6.8384 3.36694 7.47277 3.32513 8.40149C3.28349 9.3324 3.27258 9.63004 3.27258 12.0002C3.27258 14.3704 3.28313 14.6669 3.32531 15.5979C3.36803 16.5269 3.51512 17.1611 3.73075 17.716C3.95384 18.29 4.25201 18.7769 4.73727 19.262C5.22216 19.7475 5.70905 20.0464 6.28267 20.2693C6.83793 20.4851 7.47227 20.6322 8.40115 20.6748C9.33204 20.7171 9.6293 20.7275 11.9992 20.7275C14.3695 20.7275 14.6661 20.7171 15.5969 20.6748C16.526 20.6322 17.1609 20.4851 17.7161 20.2693C18.2899 20.0464 18.7761 19.7475 19.261 19.262C19.7464 18.7769 20.0446 18.29 20.2682 17.7162C20.4828 17.1611 20.6301 16.5268 20.6737 15.598C20.7155 14.6671 20.7264 14.3704 20.7264 12.0002C20.7264 9.63004 20.7155 9.33259 20.6737 8.40168C20.6301 7.47259 20.4828 6.8384 20.2682 6.28349C20.0446 5.70949 19.7464 5.22259 19.261 4.73749C18.7756 4.25204 18.2901 3.95386 17.7156 3.73113C17.1593 3.51531 16.5247 3.36822 15.5957 3.32568C14.6648 3.28331 14.3684 3.27295 11.9976 3.27295H12.0003ZM11.2174 4.84568C11.4498 4.84531 11.7091 4.84568 12.0003 4.84568C14.3304 4.84568 14.6066 4.85404 15.5268 4.89586C16.3776 4.93477 16.8394 5.07695 17.1471 5.1964C17.5543 5.35459 17.8447 5.54368 18.15 5.84913C18.4554 6.15459 18.6445 6.44549 18.803 6.85277C18.9225 7.16004 19.0648 7.62186 19.1036 8.47277C19.1454 9.39277 19.1545 9.66913 19.1545 11.9982C19.1545 14.3273 19.1454 14.6037 19.1036 15.5237C19.0646 16.3746 18.9225 16.8364 18.803 17.1437C18.6448 17.5509 18.4554 17.8409 18.15 18.1462C17.8445 18.4517 17.5545 18.6408 17.1471 18.7989C16.8398 18.9189 16.3776 19.0608 15.5268 19.0997C14.6068 19.1415 14.3304 19.1506 12.0003 19.1506C9.67002 19.1506 9.39385 19.1415 8.47388 19.0997C7.623 19.0604 7.16119 18.9182 6.85338 18.7988C6.44612 18.6406 6.15522 18.4515 5.84978 18.146C5.54433 17.8406 5.35525 17.5504 5.19671 17.1429C5.07726 16.8357 4.9349 16.3739 4.89617 15.5229C4.85435 14.6029 4.84599 14.3266 4.84599 11.996C4.84599 9.66549 4.85435 9.39059 4.89617 8.47059C4.93508 7.61968 5.07726 7.15786 5.19671 6.85022C5.35488 6.44295 5.54433 6.15204 5.84978 5.84659C6.15522 5.54113 6.44612 5.35204 6.85338 5.19349C7.16101 5.07349 7.623 4.93168 8.47388 4.89259C9.27895 4.85622 9.59094 4.84531 11.2174 4.84349V4.84568ZM16.6587 6.29477C16.0806 6.29477 15.6115 6.76331 15.6115 7.34168C15.6115 7.91986 16.0806 8.38895 16.6587 8.38895C17.2369 8.38895 17.706 7.91986 17.706 7.34168C17.706 6.76349 17.2369 6.2944 16.6587 6.2944V6.29477ZM12.0003 7.5184C9.5253 7.5184 7.51864 9.52513 7.51864 12.0002C7.51864 14.4753 9.5253 16.4811 12.0003 16.4811C14.4753 16.4811 16.4813 14.4753 16.4813 12.0002C16.4813 9.52513 14.4752 7.5184 12.0001 7.5184H12.0003ZM12.0003 9.09113C13.6068 9.09113 14.9093 10.3935 14.9093 12.0002C14.9093 13.6068 13.6068 14.9093 12.0003 14.9093C10.3936 14.9093 9.09132 13.6068 9.09132 12.0002C9.09132 10.3935 10.3936 9.09113 12.0003 9.09113Z"
+                                                fill="url(#paint1_radial_76_357)" />
+                                            <defs>
+                                                <radialGradient id="paint0_radial_76_357" cx="0" cy="0" r="1"
+                                                    gradientUnits="userSpaceOnUse"
+                                                    gradientTransform="translate(7.90878 22.0719) rotate(-90) scale(17.2987 16.0885)">
+                                                    <stop stop-color="#FFDD55" />
+                                                    <stop offset="0.1" stop-color="#FFDD55" />
+                                                    <stop offset="0.5" stop-color="#FF543E" />
+                                                    <stop offset="1" stop-color="#C837AB" />
+                                                </radialGradient>
+                                                <radialGradient id="paint1_radial_76_357" cx="0" cy="0" r="1"
+                                                    gradientUnits="userSpaceOnUse"
+                                                    gradientTransform="translate(0.348973 4.53035) rotate(78.6811) scale(7.7326 31.8729)">
+                                                    <stop stop-color="#3771C8" />
+                                                    <stop offset="0.128" stop-color="#3771C8" />
+                                                    <stop offset="1" stop-color="#6600FF" stop-opacity="0" />
+                                                </radialGradient>
+                                            </defs>
+                                        </svg>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M18.6615 9.07632C18.6673 9.22622 18.6692 9.37606 18.6692 9.52596C18.6692 14.0707 15.4722 19.3173 9.62601 19.3173C7.83015 19.3173 6.16026 18.745 4.7533 17.7706C5.002 17.7979 5.25459 17.8184 5.51105 17.8184C7.00006 17.8184 8.37149 17.2663 9.45934 16.3397C8.06852 16.3192 6.89412 15.3176 6.48908 13.9549C6.68352 13.9958 6.88377 14.0163 7.08855 14.0163C7.3773 14.0163 7.65766 13.9754 7.9264 13.8937C6.47098 13.5802 5.37474 12.1903 5.37474 10.5209C5.37474 10.5005 5.37474 10.4936 5.37474 10.48C5.80368 10.7321 6.29463 10.8887 6.81594 10.9092C5.96194 10.2891 5.40057 9.23302 5.40057 8.04062C5.40057 7.41376 5.5569 6.82094 5.83209 6.30991C7.39926 8.39491 9.74229 9.76448 12.3837 9.90757C12.3295 9.65546 12.3017 9.3898 12.3017 9.12406C12.3017 7.22304 13.7248 5.68311 15.4806 5.68311C16.3947 5.68311 17.2203 6.0988 17.7997 6.76654C18.5252 6.61664 19.2048 6.33049 19.8197 5.93529C19.5814 6.73931 19.0781 7.41373 18.4205 7.83618C19.0639 7.75441 19.6776 7.57058 20.2467 7.29803C19.8197 7.98622 19.2823 8.59255 18.6615 9.07632Z"
+                                                fill="#1EA1F2" />
+                                        </svg>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.28185 14.3702C7.37952 13.5615 7.71119 13.1088 8.3362 12.6446C9.23049 12.016 10.3476 12.3716 10.3476 12.3716V10.2621C10.6192 10.2552 10.8908 10.2713 11.1595 10.3102V13.0249C11.1595 13.0249 10.0427 12.6693 9.14842 13.2983C8.52374 13.7621 8.19139 14.2152 8.09406 15.0239C8.09101 15.463 8.17342 16.037 8.55291 16.5333C8.45908 16.4852 8.36345 16.4304 8.266 16.3689C7.43005 15.8075 7.27778 14.9654 7.28185 14.3702ZM15.772 6.36168C15.1568 5.68756 14.9241 5.00694 14.84 4.52881H15.6139C15.6139 4.52881 15.4596 5.78247 16.5842 7.01533L16.5998 7.0319C16.2967 6.84125 16.0188 6.61622 15.772 6.36168ZM19.5 8.27289V10.933C19.5 10.933 18.5125 10.8943 17.7817 10.7084C16.7612 10.4483 16.1053 10.0495 16.1053 10.0495C16.1053 10.0495 15.6523 9.76512 15.6156 9.7453V15.2384C15.6156 15.5442 15.5319 16.3081 15.2765 16.9451C14.9431 17.7785 14.4287 18.3256 14.3341 18.4374C14.3341 18.4374 13.7084 19.1768 12.6045 19.6748C11.6095 20.124 10.7359 20.1126 10.4748 20.124C10.4748 20.124 8.96461 20.1838 7.60572 19.3007C7.31186 19.106 7.03757 18.8856 6.78638 18.6422L6.79316 18.647C8.15239 19.5301 9.6622 19.4703 9.6622 19.4703C9.92367 19.459 10.7973 19.4703 11.7919 19.0211C12.8948 18.5232 13.5215 17.7837 13.5215 17.7837C13.6151 17.6719 14.1319 17.1249 14.4639 16.2912C14.7186 15.6544 14.8031 14.8903 14.8031 14.5844V9.09198C14.8397 9.11213 15.2924 9.39653 15.2924 9.39653C15.2924 9.39653 15.9487 9.79568 16.9691 10.0554C17.7003 10.2413 18.6875 10.28 18.6875 10.28V8.19553C19.0252 8.27126 19.3132 8.29174 19.5 8.27289Z"
+                                                fill="#FD355A" />
+                                            <path
+                                                d="M18.6878 8.19553V10.2793C18.6878 10.2793 17.7006 10.2406 16.9694 10.0547C15.949 9.7947 15.2928 9.39588 15.2928 9.39588C15.2928 9.39588 14.84 9.11148 14.8034 9.09132V14.5851C14.8034 14.8909 14.7196 15.6551 14.4643 16.2918C14.1309 17.1255 13.6164 17.6726 13.5218 17.7844C13.5218 17.7844 12.8958 18.5238 11.7923 19.0218C10.7976 19.471 9.92399 19.4596 9.66252 19.471C9.66252 19.471 8.15271 19.5308 6.79348 18.6477L6.78669 18.6428C6.64319 18.5038 6.50811 18.3571 6.38211 18.2034C5.94836 17.6745 5.68249 17.0492 5.61568 16.8707C5.61556 16.87 5.61556 16.8692 5.61568 16.8684C5.50817 16.5584 5.28231 15.8137 5.31317 15.0924C5.36777 13.8199 5.81542 13.0389 5.93378 12.8432C6.24724 12.3096 6.65493 11.8322 7.13871 11.4322C7.56562 11.0871 8.0495 10.8125 8.57052 10.6196C9.13376 10.3932 9.73688 10.2719 10.3476 10.2621V12.3716C10.3476 12.3716 9.23047 12.0173 8.33652 12.6446C7.7115 13.1088 7.37983 13.5615 7.28216 14.3702C7.27809 14.9654 7.43036 15.8075 8.26564 16.3692C8.36308 16.4309 8.45872 16.4858 8.55254 16.5337C8.69847 16.7233 8.87608 16.8886 9.0782 17.0228C9.89414 17.5393 10.5778 17.5754 11.4521 17.24C12.0351 17.0157 12.4739 16.5102 12.6774 15.9502C12.8052 15.6005 12.8035 15.2485 12.8035 14.8844V4.52881H14.8383C14.9224 5.00694 15.1551 5.68756 15.7703 6.36168C16.017 6.61622 16.295 6.84125 16.5981 7.0319C16.6876 7.12454 17.1454 7.58251 17.7331 7.86367C18.037 8.009 18.3574 8.12035 18.6878 8.19553Z"
+                                                fill="black" />
+                                            <path
+                                                d="M4.80579 16.2231V16.2248L4.85628 16.3616C4.85048 16.3457 4.83171 16.2973 4.80579 16.2231Z"
+                                                fill="#33F3ED" />
+                                            <path
+                                                d="M8.57051 10.6199C8.0495 10.8127 7.56561 11.0873 7.1387 11.4325C6.65477 11.8334 6.24718 12.3118 5.93411 12.8464C5.81576 13.0414 5.3681 13.8231 5.3135 15.0956C5.28264 15.8169 5.5085 16.5615 5.61601 16.8716C5.61589 16.8724 5.61589 16.8731 5.61601 16.8739C5.68383 17.0507 5.94869 17.6761 6.38244 18.2065C6.50844 18.3603 6.64352 18.507 6.78702 18.646C6.32723 18.3412 5.91716 17.9727 5.57023 17.5526C5.14021 17.0283 4.87501 16.4094 4.80583 16.2268C4.80574 16.2255 4.80574 16.2242 4.80583 16.2229V16.2206C4.69798 15.9108 4.47144 15.1658 4.50298 14.4436C4.55758 13.1711 5.00523 12.39 5.12359 12.1944C5.43657 11.6597 5.84417 11.1813 6.32818 10.7805C6.755 10.4352 7.23891 10.1606 7.75999 9.96788C8.08501 9.83863 8.42361 9.74328 8.76992 9.68348C9.29183 9.59616 9.82487 9.58859 10.3492 9.66105V10.2624C9.738 10.2719 9.13427 10.3933 8.57051 10.6199Z"
+                                                fill="#33F3ED" />
+                                            <path
+                                                d="M14.84 4.52897H12.8052V14.8849C12.8052 15.2489 12.8052 15.6 12.6791 15.9507C12.4735 16.5104 12.0364 17.0158 11.4538 17.2401C10.5792 17.5768 9.89547 17.5395 9.07987 17.023C8.8774 16.8894 8.69933 16.7246 8.55286 16.5354C9.24773 16.8907 9.8697 16.8845 10.6402 16.5881C11.2225 16.3638 11.6603 15.8584 11.8651 15.2984C11.9933 14.9486 11.9916 14.5966 11.9916 14.2329V3.875H14.8013C14.8013 3.875 14.7698 4.13243 14.84 4.52897ZM18.6878 7.6194V8.19569C18.3579 8.12039 18.0382 8.00904 17.7348 7.86383C17.1471 7.58267 16.6893 7.1247 16.5997 7.03206C16.7036 7.09744 16.8114 7.15691 16.9226 7.21018C17.6371 7.55212 18.3408 7.65418 18.6878 7.6194Z"
+                                                fill="#33F3ED" />
+                                        </svg>
+                                        <img src="./img/youTobe.png" alt="youTobe">
+                                        <img src="./img/Telegram.png" alt="Telegram">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+
+
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/app.js"></script>
 </body>
 
 </html>
