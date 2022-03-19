@@ -388,7 +388,7 @@ ____________________________________________ */
   color: #020105;
   opacity: 0.64;
 }
-.heed__cards a{
+.heed__cards__ancar{
   font-family: 'Gilroy__Med';
   font-style: normal;
   font-weight: 500;
@@ -505,6 +505,9 @@ ____________________________________________ */
     margin: 0 auto;
     padding: 0 15px;
   }
+  /* .header__biz__div{
+    display: none;
+  } */
 }
 @media(max-width:1520px){
   .max__w{
@@ -525,6 +528,9 @@ ____________________________________________ */
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 15px;
+    }
+    .header__biz__div{
+      display: block;
     }
 
 
@@ -645,7 +651,7 @@ ____________________________________________ */
       font-size: 13px;
       line-height: 20px;
     }
-    .heed__cards a{
+    .heed__cards__ancar{
       font-size: 13px;
       margin-top: 20px;
       line-height: 24px;
@@ -770,7 +776,7 @@ ____________________________________________ */
     font-size: 16px;
     line-height: 24px;
   }
-  .heed__cards a{
+  .heed__cards__ancar{
     font-size: 16px;
     margin-top: 10px;
   }

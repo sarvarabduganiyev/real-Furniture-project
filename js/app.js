@@ -14,6 +14,7 @@ const burger__qizgish2 = document.querySelector(".burger__qizgish2");
 const burger__qizgish3 = document.querySelector(".burger__qizgish3");
 
 
+
 window.addEventListener("click", (e) => {
     if (e.target.closest(".universitet__menu")) {
         universitetSelect.classList.toggle("hidden");
@@ -34,6 +35,7 @@ window.addEventListener("click", (e) => {
     if (e.target.closest(".menus")) {
         ul__links.classList.toggle("active");
         header__burger.classList.toggle('toggle');
+        body.classList.toggle("overflow-hidden");
         burger__qizgish1.classList.toggle("bg__oq");
         burger__qizgish2.classList.toggle("bg__oq");
         burger__qizgish3.classList.toggle("bg__oq");
@@ -41,6 +43,7 @@ window.addEventListener("click", (e) => {
     else {
         ul__links.classList.remove("active");
         header__burger.classList.remove('toggle');
+        body.classList.remove("overflow-hidden");
         burger__qizgish1.classList.remove("bg__oq");
         burger__qizgish2.classList.remove("bg__oq");
         burger__qizgish3.classList.remove("bg__oq");
